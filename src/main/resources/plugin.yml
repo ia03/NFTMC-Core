@@ -1,0 +1,16 @@
+name: NFTMC-Core
+version: '${project.version}'
+main: io.nftmc.nftmccore.NFTMCCore
+api-version: 1.17
+
+commands:
+  view:
+    description: Visits an NFT.
+    usage: /v <NFT ID>
+    aliases: [nft, v, view, check, c]
+    permission: nftmc.view
+  viewrandom:
+    descriptions: Visits a random NFT.
+    usage: /vr
+    aliases: [viewrandom, vr, nftr, checkrandom, cr]
+    permission: nftmc.viewrandom
