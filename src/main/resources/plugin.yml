@@ -10,7 +10,11 @@ commands:
     aliases: [nft, v, view, check, c]
     permission: nftmc.view
   viewrandom:
-    descriptions: Visits a random NFT.
+    description: Visits a random NFT.
     usage: /vr
     aliases: [viewrandom, vr, nftr, checkrandom, cr]
     permission: nftmc.viewrandom
+  help:
+    description: Lists available commands.
+    usage: /help
+    permission: nftmc.help

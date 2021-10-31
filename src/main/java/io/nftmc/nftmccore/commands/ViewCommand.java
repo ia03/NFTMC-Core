@@ -90,13 +90,13 @@ public class ViewCommand implements CommandExecutor {
                 + ChatColor.BOLD + "OpenSea.");
         openSeaLink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, (String) data.get("url")));
         openSeaLink.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
-                new ComponentBuilder("View on OpenSea!").color(net.md_5.bungee.api.ChatColor.GRAY)
+                new ComponentBuilder("View on OpenSea").color(net.md_5.bungee.api.ChatColor.GRAY)
                         .italic(true).create()));
         player.spigot().sendMessage(openSeaLink);
         TextComponent msgViewRandom = new TextComponent(ChatColor.GRAY + "Click here to view a random "
                 + ChatColor.BOLD + "NFTMC.");
         msgViewRandom.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
-                new ComponentBuilder("View a random NFTMC!").color(net.md_5.bungee.api.ChatColor.GRAY)
+                new ComponentBuilder("View a random NFTMC").color(net.md_5.bungee.api.ChatColor.GRAY)
                         .italic(true).create()));
         msgViewRandom.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/viewrandom"));
         player.spigot().sendMessage(msgViewRandom);
