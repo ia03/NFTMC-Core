@@ -39,7 +39,7 @@ public class ViewCommand implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             if (args.length != 1) {
-                player.sendMessage(ChatColor.RED + "Error: Invalid number of arguments. Correct usage: /view <NFT ID>");
+                player.sendMessage(ChatColor.RED + "Error: Invalid number of arguments. Correct usage: /view <NFTMC ID>");
                 return true;
             }
 
