@@ -81,7 +81,11 @@ public class ViewCommand implements CommandExecutor {
 
         Map<String, Object> data = yaml.load(inputStream);
         Core.getLogger().info(data.toString());
-        player.sendMessage(ChatColor.GRAY + "" + ChatColor.BOLD + "Currently viewing: NFTMC #" + ID);
+        player.sendMessage(ChatColor.GRAY + "" + ChatColor.BOLD + "Currently viewing: " + ChatColor.ITALIC +
+                ChatColor.valueOf((String) data.get("color")) + data.get("name") + ChatColor.GRAY + " "
+                + ChatColor.BOLD + "(NFTMC #" + ID + ")");
+
+
         player.sendMessage(ChatColor.GRAY + "\"" + data.get("caption") + "\"");
         player.sendMessage(ChatColor.GRAY + "Original builder: " + data.get("builder"));
         player.sendMessage(ChatColor.GRAY + "Current owner: " + data.get("owner"));

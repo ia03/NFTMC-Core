@@ -71,7 +71,7 @@ public final class NFTMCCore extends JavaPlugin {
         player.spigot().sendMessage(websiteLink);
 
 
-        TextComponent discordLink = new TextComponent(ChatColor.GRAY + "Click here to join our Discord server.");
+        TextComponent discordLink = new TextComponent(ChatColor.GRAY + "For support, click here to join our Discord server.");
         discordLink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://PLACEHOLDER.com"));
         discordLink.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT,
                 new ComponentBuilder("Join Discord server").color(net.md_5.bungee.api.ChatColor.GRAY)

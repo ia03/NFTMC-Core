@@ -18,10 +18,11 @@ public class HelpCommand implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            sender.sendMessage(ChatColor.GRAY + "/view <" + ChatColor.BOLD + "NFTMC" + ChatColor.GRAY + "ID> or "
+            player.sendMessage("");
+            player.sendMessage(ChatColor.GRAY + "/view <" + ChatColor.BOLD + "NFTMC" + ChatColor.GRAY + " ID> or "
                     + "/v <" + ChatColor.BOLD + "NFTMC" + ChatColor.GRAY + " ID> "
                     + "to teleport to an " + ChatColor.BOLD + "NFTMC.");
-            sender.sendMessage(ChatColor.GRAY + "/viewrandom or /vr to teleport to a random " + ChatColor.BOLD
+            player.sendMessage(ChatColor.GRAY + "/viewrandom or /vr to teleport to a random " + ChatColor.BOLD
                     + "NFTMC.");
             Core.sendServerLinks(player);
         } else {

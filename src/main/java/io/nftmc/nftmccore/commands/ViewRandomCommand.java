@@ -28,8 +28,6 @@ public class ViewRandomCommand implements CommandExecutor {
         int nftID = rand.nextInt(upperBound) + 1;
 
         Bukkit.dispatchCommand(sender, "view " + nftID);
-
-        Core.sendServerLinks((Player)sender);
         return true;
     }
 
