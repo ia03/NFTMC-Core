@@ -2,7 +2,8 @@ package io.nftmc.nftmccore;
 
 import com.onarandombox.MultiverseCore.MultiverseCore;
 import io.nftmc.nftmccore.commands.HelpCommand;
-import io.nftmc.nftmccore.commands.LoginListener;
+import io.nftmc.nftmccore.LoginListener;
+import io.nftmc.nftmccore.ChatListener;
 import io.nftmc.nftmccore.commands.ViewCommand;
 import io.nftmc.nftmccore.commands.ViewRandomCommand;
 import net.md_5.bungee.api.chat.ClickEvent;
@@ -46,6 +47,7 @@ public final class NFTMCCore extends JavaPlugin {
         this.getCommand("viewrandom").setExecutor(new ViewRandomCommand(this));
         this.getCommand("help").setExecutor(new HelpCommand(this));
         pm.registerEvents(new LoginListener(), this);
+        pm.registerEvents(new ChatListener(), this);
     }
 
     @Override
