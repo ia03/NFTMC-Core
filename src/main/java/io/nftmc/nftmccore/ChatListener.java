@@ -12,6 +12,5 @@ public class ChatListener implements Listener {
     public void onPlayerMessage(AsyncChatEvent event) {
         Player player = event.getPlayer();
         event.setCancelled(true);
-        player.sendMessage("The chat functionality has been disabled on NFTMC. Type /help to view available commands.");
     }
 }
